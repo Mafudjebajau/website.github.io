@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curiosidades</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfólio</a>
+
+    <div class="menutoggle"></div>
+    <ul class="nav">
+        <li class="active"><a href="#home"> <img src="img/ic1.png" alt=""> Home</a></li>
+        <li><a href="#services"> <img src="img/ic2.png" alt=""> Serviços</a></li>
+        <li><a href="#portfolio"><img src="img/ic3.png" alt="">Gostos</a></li>
+        <li><a href="#contact"><img src="img/ic4.png" alt="">Contactos</a></li>
+    </ul>
+</header>
+<section id="home">
+    <div class="content">
+        <h2>Mafudje Bá Jau</h2>
+        <p>
+          Estudo Engenheria Informática e sou programador
+          tenho já 3 anos de experiências acumuladas ao longo desse
+          periodo aprendi algumas linguagens de programação tais como Python, PHP,
+          e um pouco de JavaScript.
+          As linguagens de marcação Html5 e CSS3.
+          Também tenho experiências com sistemas Linux no caso de montagem de servidores
+          , e testes de penetração na rede um Hacker do Bem "white Hat" e não só...
+        </p>
+        <a class="btn" href="#contact">Contacte Me</a>
+    </div>
+    <img src="img/mbj.png" class="men" alt="">
+</section>
+<section id="services">
+    <div class="secText">
+        <h2>No que eu sou bom?</h2>
+        <p>
+          Ao longo dos anos com as experiências nas áreas de Informática
+          tais como TI, adquiri conhecimentos de varias especialidades
+          que julgo vitais hoje em dia pois, são elas que materializam sonhos
+          de muita gente incluindo eu, também não fiquei para trás nesta maratona.
+        </p>
+    </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img id="i1" src="img/icon1.png" alt="icon1">
+                <h3>Desenvolvedor web </h3>
+            </div>
+            <div class="servicesBx">
+                <img id="i2" src="img/icon2.png" alt="icon2">
+                <h3>Pentester </h3>
+            </div>
+            <div class="servicesBx">
+                <img id="i3" src="img/icon3.png" alt="icon3">
+                <h3>Web Designer</h3>
+            </div>
+            <div class="servicesBx">
+                <img id="i4" src="img/icon4.png" alt="icon4">
+                <h3>Esperiência em Linux</h3>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a class="btn" href="+245955145719">Me Contrate</a>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="secText">
+        <h2>Prefrências Pessoais</h2>
+        <p>
+          As Preferências pessoais as vezes indica que tipo de pessoa és para os
+          que analizam perfis.
+          Entretanto os meus gostos são certamente diferentes do comum pois também
+          me julgo diferente de muitos.
+        </p>
+    </div>
+    <div class="content">
+        <div class="imgbx">
+            <img src="img/img1.jpg" alt="">
+            <h3>Cinema</h3>
+        </div>
+        <div class="imgbx">
+            <img src="img/img2.jpg" alt="">
+            <h3>Tecnologias Informáticas</h3>
+        </div>
+        <div class="imgbx">
+            <img src="img/img3.jpg" alt="">
+            <h3>Arte </h3>
+        </div>
+        <div class="imgbx">
+            <img src="img/img4.jpg" alt="">
+            <h3>Sport Lisboa e Benfica</h3>
+        </div>
+        <div class="imgbx">
+            <img src="img/img5.jpg" alt="">
+            <h3>Internet of things "IOT"</h3>
+        </div>
+        <div class="imgbx">
+            <img src="img/img6.jpg" alt="">
+            <h3>Video Games</h3>
+        </div>
+
+    </div>
+</section>
+<section id="contact">
+    <div class="secText">
+        <h2>Como entrar em Contacto?</h2>
+        <p>
+          Para mais informações entre em contacto comigo através das redes sociais
+          através dos meus contactos listadas abaixo ou contacte via telefone pelo meu número
+          abaixo.
+        </p>
+        <div class="content">
+            <a class="a1" href="+245955145719" target="_blank"> <img src="img/imc1.png" alt=""> +245 955 145 719</a>
+            <a class="a2" href="https://www.facebook.com/mafudjebajau" target="_blank"> <img src="img/imc2.png" alt=""> Facebook</a>
+            <a class="a3" href="https://github.com/mafudjebajau" target="_blank"> <img src="img/imc3.png" alt=""> Github</a>
+            <a class="a4" href="mafudjibajau@gmail.com" target="_blank"> <img src="img/imc4.png" alt=""> mafudjibajau@gmail.com</a>
+        </div>
+        <div class="center">
+            <img src="img/49legacy.png" alt="" width="50%" height="50%">
+            <p>
+                Copyright 2023 <a  href="#">49Legacy</a>
+                All rights reserved
+            </p>
+
+        </div>
+</section>
+<script>
+    let list = document.querySelectorAll('.nav li');
+    function active(){
+        list.forEach((i) =>
+        i.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((i) =>
+    i.addEventListener('click', active));
+
+    let  menuToggle = document.querySelector('.menutoggle');
+    let header = document.querySelector('header');
+    menuToggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
